@@ -1,4 +1,7 @@
-apply plugin: 'com.android.library'
+plugins {
+    id 'com.android.library'
+    id 'maven-publish'
+}
 
 ext {
     PUBLISH_GROUP_ID = 'com.github.sujithkanna'
@@ -30,4 +33,15 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
 }
 
-// apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.akashdh11'
+                artifactId = 'SmileyRating'
+                version = '3.0.2'
+            }
+        }
+    }
+}
