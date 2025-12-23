@@ -5,14 +5,14 @@ SmileyRating is a simple rating bar for android. It displays animated smileys as
 
 ## Demo
 
- <img src="https://raw.githubusercontent.com/sujithkanna/SmileyRating/master/app/src/main/assets/demo.gif" alt="" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="575" height="205" />
+ <img src="https://raw.githubusercontent.com/akashdh11/SmileyRating/master/app/src/main/assets/demo.gif" alt="" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="575" height="205" />
 
 ## Integration
 Integrating SmileyRating in your project is very simple.
 ### Step 1:
 Add this dependency in your project's build.gradle file which is in your app folder
 ```groovy
-implementation 'com.github.sujithkanna:SmileyRating:3.0.0'
+implementation 'com.github.akashdh11:SmileyRating:3.0.0'
 ```
 **make sure to add this in your root build.gradle**
 ```gradle
@@ -89,7 +89,7 @@ Smiley will be selected with animation and listeners will also be triggered(Only
 smileRating.disallowSelection(true);
 ```
 
-You can disallow user input by passing true to this. You can set the smiley only using [this](https://github.com/sujithkanna/SmileyRating/tree/develop#you-can-set-selected-smiley-without-user-interaction). This is useful when you just want to show the rating.
+You can disallow user input by passing true to this. You can set the smiley only using [this](https://github.com/akashdh11/SmileyRating/tree/develop#you-can-set-selected-smiley-without-user-interaction). This is useful when you just want to show the rating.
 
 #### Styling
 ```java
