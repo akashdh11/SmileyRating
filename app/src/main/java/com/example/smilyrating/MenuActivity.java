@@ -22,19 +22,15 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         Intent intent = null;
-        switch (v.getId()) {
-            case R.id.smiley_view:
-                intent = new Intent(this, TestActivity.class);
-                break;
-            case R.id.smiley_rating:
-                intent = new Intent(this, MainActivity.class);
-                break;
-            case R.id.smiley_rating2:
-                intent = new Intent(this, SmileyActivity2.class);
-                break;
-            case R.id.smiley_rating2_list:
-                intent = new Intent(this, RecyclerViewExample.class);
-                break;
+        int id = v.getId();
+        if (id == R.id.smiley_view) {
+            intent = new Intent(this, TestActivity.class);
+        } else if (id == R.id.smiley_rating) {
+            intent = new Intent(this, MainActivity.class);
+        } else if (id == R.id.smiley_rating2) {
+            intent = new Intent(this, SmileyActivity2.class);
+        } else if (id == R.id.smiley_rating2_list) {
+            intent = new Intent(this, RecyclerViewExample.class);
         }
         startActivity(intent);
     }

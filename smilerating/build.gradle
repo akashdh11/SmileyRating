@@ -46,7 +46,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.akashdh11'
                 artifactId = 'SmileyRating'
-                version = '3.0.5'
+                version = '3.0.6'
             }
         }
     }
