@@ -26,6 +26,12 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
 }
 
 dependencies {
@@ -40,7 +46,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.akashdh11'
                 artifactId = 'SmileyRating'
-                version = '3.0.3'
+                version = '3.0.4'
             }
         }
     }
